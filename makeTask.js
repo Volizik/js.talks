@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-
 const args = process.argv.slice(2);
 const taskName = args[0];
 
@@ -10,7 +9,7 @@ const params = '';
 const result = '';
 
 describe('${taskName}', () => {
-    test('1', () => {
+    test('Testing returned value 1', () => {
         expect(${taskName}1(params)).toEqual(result);
     })
 });
@@ -29,3 +28,5 @@ if (!fs.existsSync(taskName)){
 } else {
     console.error(`[MAKE TASK]: Directory "${taskName}" already exist!`)
 }
+
+
