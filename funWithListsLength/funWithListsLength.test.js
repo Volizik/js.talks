@@ -1,25 +1,16 @@
+const LinkedList = require('../LinkedList');
 const funWithListsLength1 = require('./funWithListsLength1');
 
-const params = '';
-const result = '';
+const linkedList = new LinkedList();
 
-function Node(data, next = null) {
-  this.data = data;
-  this.next = next;
-}
+linkedList
+    .insert('test')
+    .insert(123)
+    .insert(321)
+    .insert('testtest');
 
-const LinkedList = () => {
-    this.data = null;
-    this.next = null
-
-    this.insert = (node) => {
-        if (!this.data) {
-            this.data = node.data;
-        } else {
-            this.next =
-        }
-    }
-}
+const params = linkedList.get();
+const result = 4;
 
 describe('funWithListsLength', () => {
     test('Testing returned value 1', () => {

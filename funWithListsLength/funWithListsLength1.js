@@ -25,6 +25,6 @@ const length = (head) => {
     return counter;
 }
 
-console.log(length({data: 1, next: { data: true, next: {data: 'test'} }}))
+// console.log(length({data: 1, next: { data: true, next: {data: 'test'} }}))
 
 module.exports = length;
