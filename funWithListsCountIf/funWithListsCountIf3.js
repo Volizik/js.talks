@@ -1,5 +1,5 @@
-// Interesting solution but not obvious
-// callback(head.data) returns boolean value and converts to number (0 or 1) because after it is "+"
+// Interesting solution, but not obvious
+// callback(head.data) returns a boolean and converts it to a number (0 or 1) because there is a "+" after it
 // And then we call function again using recursion
 
 const countIf = (head, callback) => {

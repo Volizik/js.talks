@@ -1,8 +1,7 @@
 
-const countIf = (head, callback) => {
-    // your code here...
-    const convertToArray = (head) => head ? [head.data, ...convertToArray(head.next)] : [];
+const convertToArray = (head) => head ? [head.data, ...convertToArray(head.next)] : [];
 
+const countIf = (head, callback) => {
     return convertToArray(head).filter(callback).length;
 }
 
