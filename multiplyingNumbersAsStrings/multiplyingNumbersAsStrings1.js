@@ -1,3 +1,9 @@
+//
+// Multiply two numbers! Simple!
+// The arguments are passed as strings.
+// The numbers may be way very large
+// Answer should be returned as a string
+
 const multiply = (a, b) => {
     // your code here...
     if (
@@ -5,7 +11,7 @@ const multiply = (a, b) => {
         typeof b !== 'string' ||
         isNaN(parseInt(a)) ||
         isNaN(parseInt(b))
-    ) return null;
+    ) throw new Error('Incorrect input params');
 
     return `${BigInt(a) * BigInt(b)}`;
 }
