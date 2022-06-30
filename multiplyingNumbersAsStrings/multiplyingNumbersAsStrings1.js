@@ -1,4 +1,3 @@
-//
 // Multiply two numbers! Simple!
 // The arguments are passed as strings.
 // The numbers may be way very large
