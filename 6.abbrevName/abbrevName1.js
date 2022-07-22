@@ -9,4 +9,6 @@ const abbrevName = (name) => {
     return name.split(' ').map((str) => str[0].toUpperCase()).join('.')
 }
 
+abbrevName('Sam Harris') // S.H
+
 module.exports = abbrevName;
