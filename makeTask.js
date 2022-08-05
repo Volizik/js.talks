@@ -3,14 +3,14 @@ const path = require('path');
 const args = process.argv.slice(2);
 const taskName = args[0];
 
-const fileTestContent = `const ${taskName}1 = require('./${taskName}1');
+const fileTestContent = `const ${taskName} = require('./${taskName}');
 
 const params = '';
 const result = '';
 
 describe('${taskName}', () => {
-    test('Testing returned value 1', () => {
-        expect(${taskName}1(params)).toEqual(result);
+    test(Should return [result] for [params]', () => {
+        expect(${taskName}(params)).toEqual(result);
     })
 });
 `;
@@ -24,7 +24,7 @@ module.exports = ${taskName};
 if (!fs.existsSync(taskName)){
     fs.mkdirSync(taskName);
     fs.writeFileSync(path.resolve(__dirname, taskName, `${taskName}.test.js`), fileTestContent);
-    fs.writeFileSync(path.resolve(__dirname, taskName, `${taskName}1.js`), fileScriptContent);
+    fs.writeFileSync(path.resolve(__dirname, taskName, `${taskName}.js`), fileScriptContent);
 } else {
     console.error(`[MAKE TASK]: Directory "${taskName}" already exist!`)
 }
