@@ -9,7 +9,7 @@ const params = '';
 const result = '';
 
 describe('${taskName}', () => {
-    test(Should return [result] for [params]', () => {
+    test('Should return [result] for [params]', () => {
         expect(${taskName}(params)).toEqual(result);
     })
 });
