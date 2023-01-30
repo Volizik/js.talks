@@ -1,10 +1,9 @@
 const createPhoneNumber = (arr) => {
-    // your code here...
     if (arr.length !== 10) throw Error('Array must have 10 numbers');
 
-    const copy = [...arr];
-    const pattern = "(999) 999-9999"
-    return [...pattern].map((s) => s !== '9' ? s : copy.shift()).join('');
+    let number = "(xxx) xxx-xxxx"
+    arr.forEach((n) => number = number.replace('x', n));
+    return number;
 }
 
 module.exports = createPhoneNumber;
