@@ -1,0 +1,40 @@
+Hello everyone, and welcome to today's video lesson on how to format a phone number using JavaScript.
+In this lesson, we will be learning how to take an array of ten numbers and convert it into a phone number format we define.
+
+The first step is to define our function, which we will call "createPhoneNumber".
+Our function will take an array of ten numbers as an argument.
+
+Once the function is defined, we need to make sure that the input array contains exactly 10 numbers.
+We can do this by checking the length of the array.
+If the length is not equal to 10, we will throw an error that says "Array must have 10 numbers".
+
+Next, we need to define our desired phone number format. We will define a string variable called "number" and set it equal to format like this.
+
+Ok, when we have our desired format, we need to replace the placeholder characters "x" with the numbers from our input array.
+To do this, we will use the forEach method to loop through each number in the array and replace the corresponding "x" in our "number" variable.
+
+Finally, we will return the resulting string as the output of our function.
+
+And that's it! Now you know how to format a phone number in JavaScript using an array of ten numbers.
+I hope you enjoyed this video lesson and learned something new.
+If you have any questions, feel free to ask in the comments section below. Thank you for watching!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
