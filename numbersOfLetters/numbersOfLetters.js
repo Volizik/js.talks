@@ -18,7 +18,7 @@ const numbersOfLetters = (number) => {
         const lastWordInArray = result.at(-1);
         const nextWord = convert(lastWordInArray.length);
         if (lastWordInArray === nextWord) break;
-        result.push(convert(lastWordInArray.length));
+        result.push(nextWord);
     }
     return result;
 }
