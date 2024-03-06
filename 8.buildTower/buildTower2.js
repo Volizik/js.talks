@@ -5,7 +5,7 @@ const towerBuilder = (floors) => {
 
     return Array.from(Array(floors), (_, idx) => {
         const spaces = ' '.repeat(floors - idx - 1);
-        const stars = '*'.repeat(idx * 2 + 1);
+        const stars = '*'.repeat((idx * 2) + 1);
 
         return `${spaces}${stars}${spaces}`;
     })

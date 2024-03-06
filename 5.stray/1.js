@@ -21,9 +21,7 @@
 const stray = (numbers) => {
     // your code here...
     // Ваш замечательный код тут...
-    return numbers.find(
-        (val, idx) => val !== numbers[idx - 1] && val !== numbers[idx + 1]
-    )
+    return numbers.find((num) => numbers.indexOf(num) === numbers.lastIndexOf(num));
 }
 
 // The find() method returns the value of the first element in the provided array
